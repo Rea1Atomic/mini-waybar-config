@@ -1,0 +1,64 @@
+* {
+  font-family: "FiraCode Nerd Font","Font Awesome 7 Free";
+  color: white;
+}
+
+@define-color color-bright rgba(200,150,200,0.5);
+@define-color color-dark rgba(0,75,50, 0.5);
+
+#waybar {
+  background-color: rgba(50,0,0,0);
+}
+
+#tray,
+#custom-cpu-usage,
+#battery,
+#network,
+#backlight {
+  background-color: @color-bright;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 10px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-top: 3px;
+}
+
+#custom-energy-rate,
+#pulseaudio,
+#memory,
+#clock {
+  background-color: @color-dark;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 10px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-top: 3px;
+}
+
+#workspaces button {
+  background-color: @color-dark;
+  margin: 2.5;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 10px;
+}
+
+#workspaces button.active {
+  background-color: @color-bright;
+}
+
+#workspaces button.urgent {
+  background-color: rgba(192, 0, 0, 128);
+}
